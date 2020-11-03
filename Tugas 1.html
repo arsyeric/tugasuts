@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+
+.container {
+
+    width: 800px;
+    height: 1500px;
+    border: 2px solid blue;
+    margin:auto;
+    position: relative; 
+    top: 100px;
+    
+}
+.judul {
+    width: 800px;
+    height: 100px;
+    border: 1px solid yellow;
+    padding-left: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.judul .judulatas {
+    font-size: 30px;
+    text-shadow: 3px 2px red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu {
+    width: 800px;
+    height: 50px;    
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.menu a{
+    text-decoration: none;
+    color:salmon;
+}
+.menu a:hover{
+    background-color: lightskyblue;
+    color:white;
+}
+.banner {
+
+    background-color: lightblue;
+    
+    width: 800px;
+    height: 250px;
+    background-image: url(Benner.jpg);
+    background-size: cover;
+    background-position-y:-150px;
+    
+}
+.judulartikel {
+
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: Arial;
+}
+.konten {
+width: 800px;
+height: 400px;
+padding: 20px 20px 20px 20px;
+box-sizing: border-box;
+background-color: lightblue;
+overflow: auto;
+font-family: Arial;    
+}
+.konten img {
+
+    float: left;
+    padding: 20px 20px;
+}
+.gallery {
+    border-radius: 10px;
+    background-color: turquoise;
+    margin: 5px 5px 5px 5px;
+    width: 190px;
+    height: 150px;
+    float: left;
+    font-family: Arial;
+}
+.thumbnail {
+    border-radius: 5px;
+    width: 170px;
+    height: 60px;
+    margin: 10px auto;
+    background-color: violet;
+}
+.ribbon {
+
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background-image: url(Ribbon.png);
+    left:690px;
+    top:-15px;
+}
+.layarhitam {
+
+border-radius: 5px;
+width: 200px;
+height: 50px;
+position: absolute;
+left:10px;
+top:30px;
+background-color:lightblue;
+opacity: 0.5;
+border: 1px solid lightblue;
+}
+.panel_mode {
+
+    width: 150px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    position: fixed;
+    left:1150px;
+}
+.cobaevent {
+
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+.cobaevent1 {
+
+width: 100px;
+height: 100px;
+background-color:blue;
+}
+.cobaevent2 {
+
+width: 100px;
+height: 100px;
+background-color: red;
+}
+h2, p {
+    font-family: Arial;
+}
+</style>
+
+</head>
+<body>
+
+<script>
+        function ubahwarna_dark(){
+           document.getElementById('konten').style.backgroundColor="black";
+           document.getElementById('konten').style.color="white";
+           }
+        function ubahwarna_light(){
+            document.getElementById('konten').style.backgroundColor="lightblue";
+            document.getElementById('konten').style.color="black";
+    }
+        function divkelakuan(){
+            document.getElementById('cobaeventku').className="cobaevent1";
+    }
+        function divkelakuan1(){
+            document.getElementById('cobaeventku').className="cobaevent2";
+    }
+</script>
+
+    <div class="panel_mode">
+<br>
+<center>
+        <button type="button" onclick="ubahwarna_dark()">Mode Malam Hari</button>
+        <br><br>
+        <button type="button" onclick="ubahwarna_light()">Mode Siang Hari</button>
+</center>
+
+
+    </div>
+    <div class="container">
+        <div class="layarhitam"></div>
+        <div class="ribbon"></div>
+        <div class="judul">
+            <h1 class="judulatas">My Website</h1>
+        </div>
+        <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Profil</a>
+        <a href="#">Contact</a>
+        </div>
+
+        <div class="banner"></div>
+
+        <div class="judulartikel">
+        <h2>Fotografi</h2>
+        <p> Ditulis oleh Arsy Eric Erian</p>
+        </div>
+
+
+        <div id="konten" class="konten">
+        <img src="Logo UB.jpg">
+
+        <p>Pengertian fotografi sebenarnya banyak diungkapkan oleh berbagai pihak, salah satunya pada kamus besar bahasa Indonesia. Di mana dalam KBBI ini fotografi diartikan sebagai seni dan penghasilan gambar dan cahaya pada film atau permukaan yang dipekakan. Sedangkan menurut Wikipedia pengertian fotografi merupakan kata yang dicomot dari bahasa Inggris yaitu ‘Photography’ yang mana berasal dari bahasa Yunani yaitu ‘photos’ artinya cahaya dan ‘Grafo’ yang artinya melukis atau menulis. Sehingga fotografi merupakan proses melukis atau menulis dengan menggunakan media cahaya. Secara umum, pengertian fotografi dapat diartikan sebagai proses atau metode untuk menghasilkan gambar atau foto dari suatu objek dengan merekam pantulan cahaya yang mengenai objek tersebut pada media yang peka cahaya.
+            
+            Sementara itu, fotografer bernama Elliott Erwitt juga turut mengungkapkan pendapatnya mengenai pengertian fotografi. Di mana dirinya mengatakan bahwa fotografi merupakan sebuah seni observasi. Ini tentang menemukan suatu hal yang menyenangkan di tempat biasanya. Menurut Elliot Erwitt, hal itu tidak akan ada hubungannya dengan hal-hal yang kamu lihat dan semua harus dilakukan dengan cara kamu melihat mereka. Hal ini cukup berbeda dengan pengertian fotografi menurut Ansel Adams yang mengatakan bahwa fotografi sebagai media berkespersi dan komunikasi yang kuat, menawarkan berbagai persepsi, interpretasi dan eksekusi yang tak terbatas. Tak hanya kedua fotografer di atas, Yudhi Soerjoatmodjo yang notabene merupakan salah satu fotografer Indonesia kondang juga mengungkapkan pendapatnya mengenai pengertian fotografi yang menurutnya merupakan media komunikasi dan alat dialog, fotografi juga dapat dilihat secara fungsi. Fotografi berfungsi secara dokumentatif, informatif dan bagian dari seni.</p>
+        </div>
+
+
+<br><br>
+<div class="pembungkusgallery">
+<div class="gallery"> 
+<div class="thumbnail">
+</div>
+<h2> Judul Berita</h2>
+<p>Ini adalah contoh berita <read more></p>
+</div>
+
+
+<div class="gallery"> 2 </div>
+<div class="gallery"> 3 </div>
+<div class="gallery"> 4 </div>
+<div class="gallery"> 5 </div>
+<div class="gallery"> 6 </div>
+<div class="gallery"> 7 </div>
+<div class="gallery"> 8 </div>
+</div>   
+</div>
+
+
+<div id="cobaeventku" class="cobaevent" onmouseup="divkelakuan()" onmousedown="divkelakuan1()"></div>
+</body>
+</html>
